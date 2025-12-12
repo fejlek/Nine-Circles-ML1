@@ -2154,7 +2154,7 @@ The first strictly proper scoring rule we were actually using throughout this pr
 
 
 
-We observe that this is nothing but the log-likelihood $\mathrm{log}\,L$ of the logistic model (i.e., this is the scoring rule that the logistic regression coefficients maximize).
+We observe that this is nothing but the log-likelihood $\mathrm{log}L$ of the logistic model (i.e., this is the scoring rule that the logistic regression coefficients maximize).
 
 
 ```python
@@ -2168,7 +2168,7 @@ lr_final_fit.llf
 
 
 
-We can also compute logarithimic scoring rule (as $-\frac{1}{n}\sum y_i\mathrm{log} p_i + (1-y_i)\,\mathrm{log}\, (1-p_i)$) using the function *log_loss*.
+We can also compute logarithimic scoring rule (as $-\frac{1}{n}\sum y_i\mathrm{log} p_i + (1-y_i)\mathrm{log} (1-p_i)$) using the function *log_loss*.
 
 
 ```python
