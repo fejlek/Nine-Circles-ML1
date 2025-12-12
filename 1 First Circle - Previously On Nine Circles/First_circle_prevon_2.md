@@ -2168,7 +2168,7 @@ lr_final_fit.llf
 
 
 
-We can also compute logarithimic scoring rule (as  $\sum y_i\mathrm{log} p_i + (1-y_i)\mathrm{log} (1-p_i)$) using the function *log_loss*.
+We can also compute logarithimic scoring rule (multiplied by $-\frac{1}{n}$) using the function *log_loss*.
 
 
 ```python
