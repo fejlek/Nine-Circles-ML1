@@ -1931,7 +1931,7 @@ dev = 2*(lr_full_fit.llf - lr_triv_fit.llf)
 
 
 
-The shrinkage factor is 0.87. Thus, we expect the model to perform approximately 13% worse on new data. The model overfits a bit too much (the rule of thumb is 10% shrinkage [[1](#1)]). To reduce overfitting somewhat, we can use the obseravtion that interactions in our model appeared largely insignificant.
+The shrinkage factor is 0.87. Thus, we expect the model to perform approximately 13% worse on new data. The model overfits a bit too much (the rule of thumb is 10% shrinkage [[1](#1)]). To reduce overfitting somewhat, we can use the observation that interactions in our model appeared largely insignificant.
 
 
 ```python
