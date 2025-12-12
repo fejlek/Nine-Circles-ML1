@@ -2136,7 +2136,7 @@ A ROC curve area of 0.5 corresponds to random predictions, and a value of 1 indi
 
 The area under ROC for binary classification equals the *concordance index*. The concordance index is equal to the concordance probability: the proportion of *comparable pairs* in the data (pairs that have different outcomes) that are concordant (individuals with the higher predicted probability experienced the event). 
 
-*c*-index is another improper scoring rule, and thus, *c* can give some weird results [[7](#7)]. It is also a somewhat insensitive metric (adding or removing significant predictors may not change the value of *c*), and thus, it is overall not sufficient for comparing models.
+*C*-index is another improper scoring rule, and thus, *c* can give some weird results [[7](#7)]. It is also a somewhat insensitive metric (adding or removing significant predictors may not change the value of *c*), and thus, it is overall not sufficient for comparing models.
 
 #### Strictly Proper Scoring Rules (logarithmic score and Brier score) <a class="anchor" id="scoring"></a>
 
@@ -2208,7 +2208,7 @@ lr_full_fit.aic  - lr_final_fit.aic # AIC full model - AIC model without interac
 
 
 
-which is significantly greater than 10, indicating that our full model has essentially no support according to the rules-of-thumbs from [[8](#8)].* The logarithmic scoring rule and AIC can be used only to compare models on a particular dataset. Their total value has little meaning. 
+which is significantly greater than 10, indicating that our full model has essentially no support according to the rules-of-thumbs from [[8](#8)]. The logarithmic scoring rule and AIC can be used only to compare models on a particular dataset. Their total value has little meaning. 
 
 Another strictly proper scoring rule commonly used is the Brier score. The Brier score is a mean square error between the observed outcomes (0 and 1) and the estimated probabilities.
 
